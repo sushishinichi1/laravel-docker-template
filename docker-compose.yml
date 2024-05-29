@@ -1,6 +1,5 @@
-version: '3'
+version: "3"
 services:
-
   app:
     build: ./php
     volumes:
@@ -16,7 +15,7 @@ services:
     volumes:
       - db:/var/lib/mysql
     ports:
-      - 3306:3306
+      - 3308:3306
     environment:
       - MYSQL_ROOT_PASSWORD=secret
       - MYSQL_DATABASE=laravel_app
